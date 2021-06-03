@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3F98EB26698C7000BAB398 /* DepartmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F98EA26698C7000BAB398 /* DepartmentView.swift */; };
+		AC3F98ED26698F3600BAB398 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F98EC26698F3600BAB398 /* EmployeeView.swift */; };
 		ACFCF4A62669740F006CCE92 /* CoreDataWithRelationshipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCF4A52669740F006CCE92 /* CoreDataWithRelationshipsApp.swift */; };
 		ACFCF4A82669740F006CCE92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCF4A72669740F006CCE92 /* ContentView.swift */; };
 		ACFCF4AA26697410006CCE92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCF4A926697410006CCE92 /* Assets.xcassets */; };
 		ACFCF4AD26697410006CCE92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCF4AC26697410006CCE92 /* Preview Assets.xcassets */; };
+		ACFCF4B626697523006CCE92 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCF4B526697523006CCE92 /* ContentViewModel.swift */; };
+		ACFCF4B826697847006CCE92 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCF4B726697847006CCE92 /* CoreDataManager.swift */; };
+		ACFCF4BB26697914006CCE92 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACFCF4B926697914006CCE92 /* CoreDataContainer.xcdatamodeld */; };
+		ACFCF4BE26698003006CCE92 /* BusinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCF4BD26698003006CCE92 /* BusinessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3F98EA26698C7000BAB398 /* DepartmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentView.swift; sourceTree = "<group>"; };
+		AC3F98EC26698F3600BAB398 /* EmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
 		ACFCF4A22669740F006CCE92 /* CoreDataWithRelationships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataWithRelationships.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFCF4A52669740F006CCE92 /* CoreDataWithRelationshipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWithRelationshipsApp.swift; sourceTree = "<group>"; };
 		ACFCF4A72669740F006CCE92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACFCF4A926697410006CCE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACFCF4AC26697410006CCE92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACFCF4AE26697410006CCE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFCF4B526697523006CCE92 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		ACFCF4B726697847006CCE92 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		ACFCF4BA26697914006CCE92 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
+		ACFCF4BD26698003006CCE92 /* BusinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				ACFCF4A52669740F006CCE92 /* CoreDataWithRelationshipsApp.swift */,
-				ACFCF4A72669740F006CCE92 /* ContentView.swift */,
+				ACFCF4B42669750B006CCE92 /* ViewModels */,
+				ACFCF4BC26697FE0006CCE92 /* Views */,
 				ACFCF4A926697410006CCE92 /* Assets.xcassets */,
 				ACFCF4AE26697410006CCE92 /* Info.plist */,
 				ACFCF4AB26697410006CCE92 /* Preview Content */,
+				ACFCF4B726697847006CCE92 /* CoreDataManager.swift */,
+				ACFCF4B926697914006CCE92 /* CoreDataContainer.xcdatamodeld */,
 			);
 			path = CoreDataWithRelationships;
 			sourceTree = "<group>";
@@ -67,6 +82,25 @@
 				ACFCF4AC26697410006CCE92 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACFCF4B42669750B006CCE92 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ACFCF4B526697523006CCE92 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ACFCF4BC26697FE0006CCE92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACFCF4A72669740F006CCE92 /* ContentView.swift */,
+				ACFCF4BD26698003006CCE92 /* BusinessView.swift */,
+				AC3F98EA26698C7000BAB398 /* DepartmentView.swift */,
+				AC3F98EC26698F3600BAB398 /* EmployeeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3F98ED26698F3600BAB398 /* EmployeeView.swift in Sources */,
+				ACFCF4BE26698003006CCE92 /* BusinessView.swift in Sources */,
 				ACFCF4A82669740F006CCE92 /* ContentView.swift in Sources */,
 				ACFCF4A62669740F006CCE92 /* CoreDataWithRelationshipsApp.swift in Sources */,
+				ACFCF4B826697847006CCE92 /* CoreDataManager.swift in Sources */,
+				AC3F98EB26698C7000BAB398 /* DepartmentView.swift in Sources */,
+				ACFCF4BB26697914006CCE92 /* CoreDataContainer.xcdatamodeld in Sources */,
+				ACFCF4B626697523006CCE92 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACFCF4B926697914006CCE92 /* CoreDataContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACFCF4BA26697914006CCE92 /* CoreDataContainer.xcdatamodel */,
+			);
+			currentVersion = ACFCF4BA26697914006CCE92 /* CoreDataContainer.xcdatamodel */;
+			path = CoreDataContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ACFCF49A2669740F006CCE92 /* Project object */;
 }
